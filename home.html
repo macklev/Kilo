@@ -31,14 +31,44 @@
         </section>
         
         <section class="featured">
-            <h2>Featured Products</h2>
-            <div class="product-grid">
-            <div class="card">Lemontastic</div>
-            <div class="card">Exotic Fruit</div>
-            <div class="card">Sunset Gelato</div>
-            <div class="card">Blueberry Sour Diesel</div>
-            </div>
-        </section>
+  <h2>Featured Products</h2>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <div class="product-image"></div>
+      <div class="product-info">
+        <h3>Lemontastic</h3>
+        <p>Flower Jar</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image"></div>
+      <div class="product-info">
+        <h3>Exotic Fruit</h3>
+        <p>Flower Jar</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image"></div>
+      <div class="product-info">
+        <h3>Sunset Gelato</h3>
+        <p>Flower Jar</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image"></div>
+      <div class="product-info">
+        <h3>Blueberry Sour Diesel</h3>
+        <p>Flower Jar</p>
+      </div>
+    </div>
+
+  </div>
+</section>
 
         <div class="graphic-1">
             <video autoplay muted loop playsinline>
@@ -47,21 +77,70 @@
             </video>
         </div>
 
-        <section class="COAs">
+    <section class="COAs">
+            <p class="section-tag">Lab Verified</p>
             <h2>Lab Test Data</h2>
-            <div class="coa-grid">
-                <a href="COA.html" class="card">Lemontastic COA</a>
-                <a href="COA.html" class="card">Exotic Fruit COA</a>
-                <a href="COA.html" class="card">Sunset Gelato COA</a>
-                <a href="COA.html" class="card">Blueberry Sour Diesel COA</a>
-            </div>
-        </section>
+            <p class="coa-intro">
+                Each Kilo flower batch is linked to its Certificate of Analysis.
+            </p>
 
-        <section class="contact">
-            <h2>Contact Us</h2>
-            <p>Have questions? Reach out to us!</p>
-            <a href="contact.html" class="btn">Contact Us</a>
-        </section>
+        <div class="coa-grid">
+            <a href="COA.html" class="coa-card">
+                <span class="coa-badge">COA</span>
+                <h3>Lemontastic</h3>
+                <p>Flower Jar</p>
+                <span class="view-link">View Results →</span>
+            </a>
+
+            <a href="COA.html" class="coa-card">
+                <span class="coa-badge">COA</span>
+                <h3>Exotic Fruit</h3>
+                <p>Flower Jar</p>
+                <span class="view-link">View Results →</span>
+            </a>
+
+            <a href="COA.html" class="coa-card">
+                 <span class="coa-badge">COA</span>
+                <h3>Sunset Gelato</h3>
+                <p>Flower Jar</p>
+                <span class="view-link">View Results →</span>
+            </a>
+
+            <a href="COA.html" class="coa-card">
+                <span class="coa-badge">COA</span>
+                <h3>Blueberry Sour Diesel</h3>
+                <p>Flower Jar</p>
+                <span class="view-link">View Results →</span>
+            </a>
+        </div>
+    </section>
+
+        <section class="contact-section">
+            <div class="contact-card">
+            <h2>Contact Kilo</h2>
+            <p class="contact-sub">Questions, collabs, or retail inquiries</p>
+
+            <form action="https://formspree.io/f/meevyloz" method="POST" class="contact-form">
+
+            <div class="input-group">
+                <input type="text" name="name" required>
+                <label>Your Name</label>
+            </div>
+
+            <div class="input-group">
+                <input type="email" name="email" required>
+                <label>Your Email</label>
+            </div>
+
+            <div class="input-group">
+                <textarea name="message" required></textarea>
+                <label>Your Message</label>
+            </div>
+
+            <button type="submit" class="send-btn">Send Message →</button>
+            </form>
+        </div>
+</section>
 
     </main>
 
