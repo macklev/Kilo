@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Kilo | Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
         <nav>
             <img src="Assets/Photos/transparentLogo.png" alt="Logo" class="logo">
             <ul>
-                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="COA.html">Lab Test Data</a></li>
@@ -19,6 +19,78 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+  <section class="contact-section">
+    <div class="contact-layout">
+
+      <div class="contact-info">
+        <p class="section-tag">Contact Us</p>
+        <h1>Let’s Talk Kilo</h1>
+        <p>
+          Have a question about our flower jars, lab data, retail availability,
+          or brand collaborations? Send us an inquiry and we’ll get back to you.
+        </p>
+
+        <div class="contact-note">
+          <h3>Not for online sale</h3>
+          <p>
+            This website is informational only. Product purchases are not available online.
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <h2>Send an Inquiry</h2>
+        <p class="contact-sub">Questions, collabs, or retail inquiries</p>
+
+        <form action="https://formspree.io/f/meevyloz" method="POST" class="contact-form">
+
+          <div class="input-group">
+            <input type="text" name="name" required>
+            <label>Your Name</label>
+          </div>
+
+          <div class="input-group">
+            <input type="email" name="email" required>
+            <label>Your Email</label>
+          </div>
+
+          <div class="input-group">
+            <select name="inquiry-type" required>
+              <option value="" disabled selected></option>
+              <option value="general">General Question</option>
+              <option value="retail">Retail Inquiry</option>
+              <option value="coa">Lab Test Data</option>
+              <option value="collab">Collaboration</option>
+            </select>
+            <label>Inquiry Type</label>
+          </div>
+
+          <div class="input-group">
+            <textarea name="message" required></textarea>
+            <label>Your Message</label>
+          </div>
+
+          <button type="submit" class="send-btn">Send Message →</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <p>21+ Only | Not for online sale</p>
+
+    <div class="spray-social">
+  <span>Follow the tag</span>
+  <a href="https://instagram.com/kilocanna" target="_blank" class="spray-tag">
+    @kilo
+  </a>
+</div>
+</footer>
 
     
 </body>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
+    <title>Kilo | Products</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
         <nav>
             <img src="Assets/Photos/transparentLogo.png" alt="Logo" class="logo">
             <ul>
-                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="COA.html">Lab Test Data</a></li>
@@ -21,25 +21,38 @@
     </header>
 
     <main>
-        <section class="products-page">
-  <div class="page-header">
-    <p class="section-tag">Kilo Flower</p>
-    <h1>Products</h1>
-    <p>Explore our current lineup of flower jars.</p>
-  </div>
+      <section class="products-page">
+        <div class="products-intro">
+          <div class="page-header">
+          <p class="section-tag">Kilo Flower</p>
+          <h1>Products</h1>
+          <p>
+          Explore Kilo’s current lineup of premium flower jars. Each strain has its own
+          flavor profile, aroma, and lab information so you can learn before you buy in-store.
+          </p>
+          </div>
 
-  <div class="product-grid">
+        <div class="products-banner">
+         <span>Flower Jars Only</span>
+          <p>
+          Kilo currently offers four jarred flower products: Lemontastic, Exotic Fruit,
+          Sunset Gelato, and Blueberry Sour Diesel.
+          </p>
+        </div>
+        </div>
 
-    <div class="product-card">
-      <div class="product-image lemontastic"></div>
-      <div class="product-info">
-        <h3>Lemontastic</h3>
-        <p>Flower Jar</p>
-        <span class="product-tag">Bright • Citrus • Smooth</span>
-      </div>
-    </div>
+        <div class="product-grid">
 
-    <div class="product-card">
+          <div class="product-card" data-product="lemontastic" tabindex="0">
+            <div class="product-image lemontastic"></div>
+              <div class="product-info">
+              <h3>Lemontastic</h3>
+              <p>Flower Jar</p>
+              <span class="product-tag">Diesel Gas • Citrus • Smooth</span>
+              </div>
+            </div>
+
+    <div class="product-card" data-product="exotic-fruit" tabindex="0">
       <div class="product-image exotic-fruit"></div>
       <div class="product-info">
         <h3>Exotic Fruit</h3>
@@ -48,7 +61,7 @@
       </div>
     </div>
 
-    <div class="product-card">
+    <div class="product-card" data-product="sunset-gelato" tabindex="0">
       <div class="product-image sunset-gelato"></div>
       <div class="product-info">
         <h3>Sunset Gelato</h3>
@@ -57,7 +70,7 @@
       </div>
     </div>
 
-    <div class="product-card">
+    <div class="product-card" data-product="blueberry-sour" tabindex="0">
       <div class="product-image blueberry-sour"></div>
       <div class="product-info">
         <h3>Blueberry Sour Diesel</h3>
@@ -67,8 +80,36 @@
     </div>
 
   </div>
+
+  <div class="product-modal" hidden aria-hidden="true">
+    <div class="product-modal-backdrop" data-modal-close></div>
+    <div class="product-modal-card" role="dialog" aria-modal="true" aria-labelledby="product-modal-title">
+      <button type="button" class="product-modal-close" aria-label="Close product details" data-modal-close>&times;</button>
+      <div class="product-modal-image"></div>
+      <div class="product-modal-body">
+        <p class="section-tag">Product Details</p>
+        <h2 id="product-modal-title"></h2>
+        <p class="product-modal-meta"></p>
+        <p class="product-modal-description"></p>
+        <div class="product-modal-details"></div>
+      </div>
+    </div>
+  </div>
 </section>
+
+<footer>
+  <div class="footer-content">
+    <p>21+ Only | Not for online sale</p>
+
+    <div class="spray-social">
+  <span>Follow the tag</span>
+  <a href="https://instagram.com/kilocanna" target="_blank" class="spray-tag">
+    @kilo
+  </a>
+</div>
+</footer>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
 
